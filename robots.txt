@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://poultryshippingboxes.com/sitemap.xml
