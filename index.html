@@ -104,6 +104,11 @@
     .hero-text h1 { font-size: 1.9rem; }
     .specs-bar { flex-direction: column; }
   }
+
+  .photo-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin:0;max-height:320px;overflow:hidden}
+  .photo-strip img{width:100%;height:280px;object-fit:cover;display:block}
+  @media(max-width:640px){.photo-strip{grid-template-columns:1fr;max-height:none}.photo-strip img{height:200px}}
+
 </style>
 </head>
 <body>
@@ -129,6 +134,13 @@
     </div>
   </div>
 </section>
+
+<div class="photo-strip">
+  <img src="https://brazenproducts.github.io/elipacko-assets/cold-chain.jpg" alt="Cold chain frozen poultry containers" loading="lazy">
+  <img src="https://brazenproducts.github.io/elipacko-assets/poultry-box.jpg" alt="Plastic poultry shipping boxes" loading="lazy">
+  <img src="https://brazenproducts.github.io/elipacko-assets/warehouse-stack.jpg" alt="Warehouse cold storage stacking" loading="lazy">
+</div>
+
 
 <div class="specs-bar">
   <div class="spec"><div class="val">PP / HDPE</div><div class="key">Material</div></div>
